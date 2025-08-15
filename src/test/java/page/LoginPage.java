@@ -55,7 +55,7 @@ public class LoginPage extends BasePage {
         return btnLogin.getAttribute("aria-disabled").equals("true");
     }
 
-    public boolean getErrorMessageOfUsernameDisplayed() {
+    public boolean isErrorMessageOfUsernameDisplayed() {
         return errorMsgOfUsername.isDisplayed();
     }
 

@@ -34,6 +34,6 @@ public class VerifyUserCanLoginNakivo extends BaseTest {
     public void verifyErrorMessageOfUsernameIsNDisplayedWhenInputMoreThanTwoHundredAndFiftyFiveCharacters() {
         login.inputUserName(RandomUtils.randomString(550));
         login.hoverOnUsername();
-        Assert.assertTrue(login.isErrorMessageDisplayed());
+        Assert.assertTrue(login.isErrorMessageOfUsernameDisplayed());
     }
 }
